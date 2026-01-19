@@ -24,8 +24,8 @@ Para o WhatsApp exibir a logo, edite as metas Open Graph em `index.html`
 substituindo `SEU_DOMINIO` pelo endereço público desta página:
 
 ```html
-<meta property="og:image" content="https://tchelevo-app.onrender.com/images/tchelevo.png" />
-<meta property="og:url" content="https://tchelevo-app.onrender.com//" />
+<meta property="og:image" content="https://tchelevo.valedata.com.br/images/tchelevo.png" />
+<meta property="og:url" content="https://tchelevo.valedata.com.br//" />
 ```
 
 ## Estrutura de arquivos
