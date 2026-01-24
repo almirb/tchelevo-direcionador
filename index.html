@@ -4,19 +4,39 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tchê Levo | Download</title>
-    <meta name="description" content="Redirecionamento para o app Tchê Levo no Android ou iOS." />
+    <title>Tchê Levo | Seu aplicativo de mobilidade urbana!</title>
+    <meta name="description"
+        content="Tchê Levo - Seu aplicativo de mobilidade urbana! Transporte rápido, seguro e acessível. Disponível para iOS e Android." />
+    <meta name="keywords"
+        content="tchê levo, mobilidade urbana, app transporte, táxi app, uber alternativa, transporte local" />
+    <meta name="author" content="Ezedy" />
+    <meta name="theme-color" content="#0f2d2e" />
+    <link rel="canonical" href="https://tchelevo.app.br/" />
 
+    <!-- Open Graph / Facebook -->
     <meta property="og:locale" content="pt_BR" />
-    <meta property="og:title" content="Tchê Levo" />
-    <meta property="og:description" content="Baixe o app Tchê Levo na App Store ou Google Play." />
-    <meta property="og:image" content="https://tchelevo.valedata.com.br/images/tchelevo.png" />
-    <meta property="og:url" content="https://tchelevo.valedata.com.br/" />
+    <meta property="og:site_name" content="Tchê Levo" />
+    <meta property="og:title" content="Tchê Levo - Mobilidade Urbana" />
+    <meta property="og:description"
+        content="Seu aplicativo de mobilidade urbana! Transporte rápido, seguro e acessível." />
+    <meta property="og:image" content="https://tchelevo.app.br/images/tchelevo.png" />
+    <!-- <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" /> -->
+    <meta property="og:url" content="https://tchelevo.app.br/" />
     <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Tchê Levo" />
-    <meta name="twitter:description" content="Baixe o app Tchê Levo na App Store ou Google Play." />
-    <meta name="twitter:image" content="https://tchelevo.valedata.com.br/images/tchelevo.png" />
+    <meta name="twitter:title" content="Tchê Levo - Mobilidade Urbana" />
+    <meta name="twitter:description"
+        content="Seu aplicativo de mobilidade urbana! Transporte rápido, seguro e acessível." />
+    <meta name="twitter:image" content="https://tchelevo.app.br/images/tchelevo.png" />
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Tchê Levo" />
+    <link rel="apple-touch-icon" href="images/tchelevo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;600;700&display=swap"
@@ -53,6 +73,7 @@
                 linear-gradient(160deg, var(--bg-ink) 0%, var(--bg-ink-2) 70%);
             position: relative;
             overflow: hidden;
+            padding: 20px;
         }
 
         body::before {
@@ -67,38 +88,24 @@
 
         .wrap {
             position: relative;
-            width: min(92vw, 420px);
+            width: min(92vw, 480px);
             z-index: 1;
         }
 
         .card {
             background: rgba(18, 29, 30, 0.9);
             border-radius: 28px;
-            padding: 28px 24px 26px;
+            padding: 40px 32px;
             box-shadow: var(--shadow);
             border: 1px solid rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(6px);
             text-align: center;
         }
 
-        .brand {
-            font-family: "Bebas Neue", sans-serif;
-            letter-spacing: 1px;
-            font-size: 34px;
-            color: var(--paper);
-            margin: 12px 0 6px;
-        }
-
-        .sub {
-            color: rgba(255, 246, 232, 0.7);
-            font-size: 14px;
-            margin: 0 0 18px;
-        }
-
         .icon-wrap {
             width: 140px;
             height: 140px;
-            margin: 0 auto 14px;
+            margin: 0 auto 20px;
             background: linear-gradient(135deg, rgba(255, 122, 61, 0.4), rgba(16, 200, 168, 0.5));
             border-radius: 28px;
             padding: 10px;
@@ -114,33 +121,62 @@
             box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
         }
 
-        .destination {
-            font-size: 15px;
-            color: rgba(255, 246, 232, 0.85);
-            margin: 0 0 8px;
+        .brand {
+            font-family: "Bebas Neue", sans-serif;
+            letter-spacing: 1px;
+            font-size: 48px;
+            color: var(--paper);
+            margin: 0 0 10px;
+            line-height: 1;
         }
 
-        .destination strong {
+        .slogan {
             color: var(--accent);
-            font-weight: 700;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 24px;
         }
 
-        .status {
-            display: inline-flex;
+        .description {
+            color: rgba(255, 246, 232, 0.8);
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0 0 32px;
+        }
+
+        .features {
+            display: grid;
+            gap: 16px;
+            margin-bottom: 32px;
+            text-align: left;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 14px;
+            padding: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .feature-title {
+            color: var(--accent-2);
+            font-weight: 600;
+            font-size: 14px;
+            margin: 0 0 6px;
+            display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 13px;
-            color: rgba(255, 246, 232, 0.75);
-            margin: 8px 0 20px;
+            gap: 8px;
         }
 
-        .pulse {
-            width: 10px;
-            height: 10px;
-            background: var(--accent-2);
-            border-radius: 50%;
-            box-shadow: 0 0 0 rgba(30, 241, 197, 0.7);
-            animation: pulse 1.6s infinite;
+        .feature-text {
+            color: rgba(255, 246, 232, 0.7);
+            font-size: 13px;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .icon {
+            font-size: 18px;
         }
 
         .buttons {
@@ -153,7 +189,7 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            padding: 12px 16px;
+            padding: 14px 20px;
             border-radius: 14px;
             font-size: 15px;
             font-weight: 600;
@@ -172,64 +208,24 @@
             background: linear-gradient(135deg, var(--accent) 0%, #ffd27d 100%);
         }
 
-        .btn.secondary {
-            background: rgba(255, 246, 232, 0.12);
-            color: var(--paper);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .hint {
-            font-size: 12px;
-            color: rgba(255, 246, 232, 0.6);
-            margin-top: 16px;
-            line-height: 1.4;
-        }
-
         .footer {
             text-align: center;
-            margin-top: 18px;
-            font-size: 11px;
-            color: rgba(255, 246, 232, 0.45);
-        }
-
-        .footer a {
-            color: rgba(255, 246, 232, 0.7);
-            text-decoration: none;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 6px 10px;
-            border-radius: 999px;
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            background: rgba(16, 200, 168, 0.16);
-            color: var(--accent-2);
-            margin-bottom: 14px;
-        }
-
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(30, 241, 197, 0.7);
-            }
-
-            70% {
-                box-shadow: 0 0 0 14px rgba(30, 241, 197, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(30, 241, 197, 0);
-            }
+            margin-top: 20px;
+            font-size: 12px;
+            color: rgba(255, 246, 232, 0.5);
         }
 
         @media (max-width: 420px) {
             .card {
-                padding: 24px 18px;
+                padding: 32px 24px;
             }
 
             .brand {
-                font-size: 30px;
+                font-size: 40px;
+            }
+
+            .slogan {
+                font-size: 16px;
             }
         }
     </style>
@@ -237,97 +233,56 @@
 
 <body>
     <main class="wrap">
-        <div class="card" data-card>
-            <div class="badge">Abrindo o app</div>
+        <div class="card">
             <div class="icon-wrap">
                 <img class="app-icon" src="images/tchelevo.png" alt="Tchê Levo" />
             </div>
             <h1 class="brand">Tchê Levo</h1>
-            <p class="sub">Seu transporte local com agilidade.</p>
-            <p class="destination">
-                Você está indo para: <strong data-destination>Loja do app</strong>
+            <p class="slogan">Seu aplicativo de mobilidade urbana!</p>
+            <p class="description">
+                Transporte rápido, seguro e acessível na palma da sua mão.
+                Com o Tchê Levo, você vai onde quiser com conforto e praticidade.
             </p>
-            <p class="destination">
-                Link: <span data-destination-url>aguarde...</span>
-            </p>
-            <div class="status" data-status>
-                <span class="pulse" aria-hidden="true"></span>
-                Preparando o redirecionamento
+
+            <div class="features">
+                <div class="feature">
+                    <h3 class="feature-title">
+                        <span class="icon">⚡</span>
+                        Rápido e Prático
+                    </h3>
+                    <p class="feature-text">
+                        Solicite sua corrida em segundos e acompanhe em tempo real.
+                    </p>
+                </div>
+                <div class="feature">
+                    <h3 class="feature-title">
+                        <span class="icon">🛡️</span>
+                        Seguro e Confiável
+                    </h3>
+                    <p class="feature-text">
+                        Motoristas verificados e pagamento seguro pelo app, com dinheiro ou PIX.
+                    </p>
+                </div>
+                <div class="feature">
+                    <h3 class="feature-title">
+                        <span class="icon">💰</span>
+                        Preços Justos
+                    </h3>
+                    <p class="feature-text">
+                        Tarifas transparentes e opções de pagamento flexíveis.
+                    </p>
+                </div>
             </div>
 
             <div class="buttons">
-                <a class="btn primary" data-primary-link href="#">Abrir agora</a>
-                <a class="btn secondary" data-ios-link href="#">App Store</a>
-                <a class="btn secondary" data-android-link href="#">Google Play</a>
+                <a class="btn primary" href="baixar/">Baixar o App</a>
             </div>
-
-            <p class="hint">
-                Se não abrir automaticamente, toque no botão acima.
-            </p>
         </div>
         <div class="footer">
-            Direcionador automático desenvolvido pela <a href="ezedy.com" target="_blank">Ezedy</a>.
+            © 2026 <a href="https://ezedy.com" target="_blank"
+                style="color: rgba(255, 246, 232, 0.7); text-decoration: none;">Ezedy</a> - Todos os direitos reservados
         </div>
     </main>
-
-    <script>
-        // Links de download (edite aqui se mudar).
-        const APP_STORE_URL =
-            "https://apps.apple.com/br/app/tch%C3%AA-levo/id1529677708";
-        const PLAY_STORE_URL =
-            "https://play.google.com/store/apps/details?id=br.com.tchelevo.passenger.drivermachine";
-
-        const destinationEl = document.querySelector("[data-destination]");
-        const destinationUrlEl = document.querySelector("[data-destination-url]");
-        const statusEl = document.querySelector("[data-status]");
-        const primaryLink = document.querySelector("[data-primary-link]");
-        const iosLink = document.querySelector("[data-ios-link]");
-        const androidLink = document.querySelector("[data-android-link]");
-
-        iosLink.href = APP_STORE_URL;
-        androidLink.href = PLAY_STORE_URL;
-
-        const ua = navigator.userAgent || "";
-        const isAndroid = /android/i.test(ua);
-        const isIOS = /iPad|iPhone|iPod/.test(ua) || (ua.includes("Mac") && "ontouchend" in document);
-
-        let targetUrl = "";
-        let targetLabel = "";
-
-        if (isAndroid) {
-            targetUrl = PLAY_STORE_URL;
-            targetLabel = "Google Play";
-        } else if (isIOS) {
-            targetUrl = APP_STORE_URL;
-            targetLabel = "App Store";
-        }
-
-        if (targetUrl) {
-            destinationEl.textContent = targetLabel;
-            destinationUrlEl.textContent = targetUrl;
-            primaryLink.href = targetUrl;
-            primaryLink.textContent = "Abrir no " + targetLabel;
-            statusEl.lastChild.textContent = "Redirecionando agora";
-
-            setTimeout(() => {
-                window.location.href = targetUrl;
-            }, 1200);
-        } else {
-            destinationEl.textContent = "Escolha sua loja";
-            destinationUrlEl.textContent = "Use os botões abaixo";
-            primaryLink.href = "#";
-            primaryLink.textContent = "Selecionar loja";
-            statusEl.lastChild.textContent = "Selecione a loja desejada";
-        }
-    </script>
-
-    <noscript>
-        <style>
-            .status {
-                display: none;
-            }
-        </style>
-    </noscript>
 </body>
 
 </html>
